@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CompramosTuCocheConDeudas | Toda España</title>
+
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Arial,sans-serif;background:#f5f5f5;color:#222;line-height:1.6}
+
+header{
+    background:#111;
+    color:white;
+    padding:20px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{font-size:22px;font-weight:bold}
+header a{color:white;text-decoration:none;font-weight:bold}
+
+.hero{
+    background:linear-gradient(135deg,#111,#333);
+    color:white;
+    text-align:center;
+    padding:90px 20px;
+}
+
+.hero h1{
+    font-size:clamp(36px,6vw,58px);
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:21px;
+    max-width:750px;
+    margin:auto;
+}
+
+.boton{
+    display:inline-block;
+    margin-top:30px;
+    padding:16px 30px;
+    background:#25D366;
+    color:white;
+    text-decoration:none;
+    border-radius:8px;
+    font-size:18px;
+    font-weight:bold;
+}
+
+section{
+    max-width:1100px;
+    margin:auto;
+    padding:70px 20px;
+}
+
+.titulo{
+    text-align:center;
+    font-size:34px;
+    margin-bottom:40px;
+}
+
+.tarjetas,.pasos{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+}
+
+.tarjeta,.paso,.formulario{
+    background:white;
+    padding:28px;
+    border-radius:12px;
+    box-shadow:0 4px 18px rgba(0,0,0,.08);
+}
+
+.tarjeta{text-align:center}
+.icono{font-size:42px;margin-bottom:12px}
+
+.paso{text-align:center}
+.numero{
+    font-size:30px;
+    font-weight:bold;
+    margin-bottom:10px;
+}
+
+.formulario{
+    max-width:650px;
+    margin:auto;
+}
+
+label{
+    display:block;
+    margin-top:15px;
+    margin-bottom:6px;
+    font-weight:bold;
+}
+
+input,select,textarea{
+    width:100%;
+    padding:13px;
+    border:1px solid #ccc;
+    border-radius:7px;
+    font-size:16px;
+}
+
+textarea{
+    min-height:100px;
+}
+
+button{
+    width:100%;
+    border:none;
+    margin-top:25px;
+    padding:16px;
+    background:#25D366;
+    color:white;
+    border-radius:8px;
+    font-size:18px;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+.contacto{
+    background:#111;
+    color:white;
+    text-align:center;
+    max-width:none;
+}
+
+.contacto a{
+    color:#25D366;
+    font-size:24px;
+    font-weight:bold;
+    text-decoration:none;
+}
+
+footer{
+    background:#000;
+    color:#aaa;
+    text-align:center;
+    padding:25px 15px;
+    font-size:13px;
+}
+
+.whatsapp{
+    position:fixed;
+    right:20px;
+    bottom:20px;
+    width:60px;
+    height:60px;
+    background:#25D366;
+    color:white;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:30px;
+    text-decoration:none;
+    box-shadow:0 4px 15px rgba(0,0,0,.3);
+}
+
+@media(max-width:800px){
+    .tarjetas,.pasos{
+        grid-template-columns:1fr 1fr;
+    }
+
+    header{
+        flex-direction:column;
+        gap:10px;
+        text-align:center;
+    }
+}
+
+@media(max-width:500px){
+    .tarjetas,.pasos{
+        grid-template-columns:1fr;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">CompramosTuCocheConDeudas</div>
+    <a href="tel:+34678544644">📞 678 544 644</a>
+</header>
+
+<section class="hero">
+    <h1>¿Tienes un coche con deudas?</h1>
+
+    <p>
+        Estudiamos la compra de vehículos con deudas,
+        embargos o reserva de dominio en toda España.
+    </p>
+
+    <a class="boton"
+       href="https://wa.me/34678544644?text=Hola,%20quiero%20solicitar%20una%20valoraci%C3%B3n%20de%20mi%20coche.">
+        Solicita valoración
+    </a>
+</section>
+
+<section>
+    <h2 class="titulo">¿Qué tipo de casos estudiamos?</h2>
+
+    <div class="tarjetas">
+
+        <div class="tarjeta">
+            <div class="icono">💶</div>
+            <h3>Con deudas</h3>
+            <p>Estudiamos vehículos con deudas pendientes.</p>
+        </div>
+
+        <div class="tarjeta">
+            <div class="icono">⚖️</div>
+            <h3>Con embargo</h3>
+            <p>Analizamos la situación del vehículo antes de realizar una oferta.</p>
+        </div>
+
+        <div class="tarjeta">
+            <div class="icono">📄</div>
+            <h3>Reserva de dominio</h3>
+            <p>Estudiamos vehículos con reserva de dominio.</p>
+        </div>
+
+        <div class="tarjeta">
+            <div class="icono">🚗</div>
+            <h3>Otros casos</h3>
+            <p>Cuéntanos tu situación y estudiaremos tu caso.</p>
+        </div>
+
+    </div>
+</section>
+
+<section>
+    <h2 class="titulo">¿Cómo funciona?</h2>
+
+    <div class="pasos">
+
+        <div class="paso">
+            <div class="numero">1</div>
+            <h3>Cuéntanos tu caso</h3>
+            <p>Facilítanos los datos básicos del vehículo.</p>
+        </div>
+
+        <div class="paso">
+            <div class="numero">2</div>
+            <h3>Estudiamos</h3>
+            <p>Revisamos la situación del vehículo.</p>
+        </div>
+
+        <div class="paso">
+            <div class="numero">3</div>
+            <h3>Valoramos</h3>
+            <p>Si es viable, te presentamos nuestra propuesta.</p>
+        </div>
+
+        <div class="paso">
+            <div class="numero">4</div>
+            <h3>Gestionamos</h3>
+            <p>Revisamos la documentación y la operación.</p>
+        </div>
+
+    </div>
+</section>
+
+<section>
+    <h2 class="titulo">Solicita valoración</h2>
+
+    <div class="formulario">
+
+        <form onsubmit="enviarWhatsApp(event)">
+
+            <label>Nombre</label>
+            <input id="nombre" type="text" required>
+
+            <label>Marca y modelo</label>
+            <input id="coche" type="text" required>
+
+            <label>Año</label>
+            <input id="ano" type="number" required>
+
+            <label>Matrícula</label>
+            <input id="matricula" type="text" required>
+
+            <label>Situación del vehículo</label>
+
+            <select id="situacion" required>
+                <option value="">Selecciona una opción</option>
+                <option>Deuda</option>
+                <option>Embargo</option>
+                <option>Reserva de dominio</option>
+                <option>Otro</option>
+            </select>
+
+            <label>Teléfono</label>
+            <input id="telefono" type="tel" required>
+
+            <label>Información adicional</label>
+            <textarea id="mensaje"></textarea>
+
+            <button type="submit">
+                Solicitar valoración por WhatsApp
+            </button>
+
+        </form>
+
+    </div>
+</section>
+
+<section class="contacto">
+
+    <h2>📞 Contacta con nosotros</h2>
+
+    <p style="margin:20px 0;">
+        Compramos vehículos en toda España.
+    </p>
+
+    <a href="https://wa.me/34678544644">
+        WhatsApp: 678 544 644
+    </a>
+
+    <br><br>
+
+    <a href="tel:+34678544644">
+        Llamar ahora
+    </a>
+
+</section>
+
+<footer>
+    <p>© 2026 CompramosTuCocheConDeudas</p>
+
+    <p style="margin-top:10px;">
+        Toda operación queda sujeta a la comprobación
+        de la situación jurídica y administrativa del
+        vehículo y de su documentación.
+    </p>
+</footer>
+
+<a class="whatsapp"
+   href="https://wa.me/34678544644"
+   aria-label="WhatsApp">
+    💬
+</a>
+
+<script>
+
+function enviarWhatsApp(event){
+
+    event.preventDefault();
+
+    const nombre =
+        document.getElementById("nombre").value;
+
+    const coche =
+        document.getElementById("coche").value;
+
+    const ano =
+        document.getElementById("ano").value;
+
+    const matricula =
+        document.getElementById("matricula").value;
+
+    const situacion =
+        document.getElementById("situacion").value;
+
+    const telefono =
+        document.getElementById("telefono").value;
+
+    const mensaje =
+        document.getElementById("mensaje").value;
+
+    const texto =
+        "Hola, quiero solicitar una valoración.%0A%0A" +
+        "Nombre: " + encodeURIComponent(nombre) + "%0A" +
+        "Coche: " + encodeURIComponent(coche) + "%0A" +
+        "Año: " + encodeURIComponent(ano) + "%0A" +
+        "Matrícula: " + encodeURIComponent(matricula) + "%0A" +
+        "Situación: " + encodeURIComponent(situacion) + "%0A" +
+        "Teléfono: " + encodeURIComponent(telefono) + "%0A" +
+        "Información: " + encodeURIComponent(mensaje);
+
+    window.open(
+        "https://wa.me/34678544644?text=" + texto,
+        "_blank"
+    );
+}
+
+</script>
+
+</body>
+</html>
