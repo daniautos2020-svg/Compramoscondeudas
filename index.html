@@ -391,6 +391,137 @@ function enviarWhatsApp(event){
 }
 
 </script>
+<!-- AVISO DE COOKIES -->
+<div id="cookie-banner" class="cookie-banner">
+  <div class="cookie-content">
+    <strong>🍪 Utilizamos cookies</strong>
 
+    <p>
+      Utilizamos cookies para mejorar tu experiencia de navegación.
+      Puedes aceptar o rechazar las cookies.
+    </p>
+  </div>
+
+  <div class="cookie-buttons">
+    <button id="cookie-accept" type="button">
+      Aceptar todas
+    </button>
+
+    <button id="cookie-reject" type="button">
+      Rechazar
+    </button>
+  </div>
+</div>
+
+<style>
+.cookie-banner {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 99999;
+
+  background: #111;
+  color: #fff;
+
+  padding: 18px 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+
+  box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.3);
+
+  font-family: Arial, sans-serif;
+}
+
+.cookie-content {
+  max-width: 700px;
+}
+
+.cookie-content strong {
+  font-size: 18px;
+}
+
+.cookie-content p {
+  margin: 7px 0 0;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.cookie-buttons {
+  display: flex;
+  gap: 10px;
+  flex-shrink: 0;
+}
+
+.cookie-buttons button {
+  padding: 11px 18px;
+
+  background: #fff;
+  color: #111;
+
+  border: 1px solid #fff;
+  border-radius: 6px;
+
+  cursor: pointer;
+
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.cookie-buttons button:hover {
+  opacity: 0.85;
+}
+
+/* Móvil */
+@media (max-width: 700px) {
+
+  .cookie-banner {
+    flex-direction: column;
+    text-align: center;
+    padding: 18px 15px;
+  }
+
+  .cookie-content {
+    max-width: 100%;
+  }
+
+  .cookie-buttons {
+    width: 100%;
+  }
+
+  .cookie-buttons button {
+    flex: 1;
+  }
+}
+</style>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  const banner = document.getElementById("cookie-banner");
+  const accept = document.getElementById("cookie-accept");
+  const reject = document.getElementById("cookie-reject");
+
+  const consent = localStorage.getItem("cookie-consent");
+
+  if (consent) {
+    banner.style.display = "none";
+  }
+
+  accept.addEventListener("click", function () {
+    localStorage.setItem("cookie-consent", "accepted");
+    banner.style.display = "none";
+  });
+
+  reject.addEventListener("click", function () {
+    localStorage.setItem("cookie-consent", "rejected");
+    banner.style.display = "none";
+  });
+
+});
+</script>
 </body>
 </html>
