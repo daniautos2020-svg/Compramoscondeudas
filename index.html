@@ -405,6 +405,9 @@ function enviarWhatsApp(event){
         "Teléfono: " + encodeURIComponent(telefono) + "%0A" +
         "Información: " + encodeURIComponent(mensaje);
 
+  gtag('event', 'conversion', {
+  'send_to': 'AW-18296637019/2nmmCP2h1vZcENuMwpRE'
+});
     window.open(
         "https://wa.me/34678544644?text=" + texto,
         "_blank"
