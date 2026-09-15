@@ -1,6 +1,11 @@
-<!DOCTYPE html>
+.<!DOCTYPE html>
 <html lang="es">
 <head>
+
+<!-- =========================
+     GOOGLE ADS + CONSENT MODE V2
+     ========================= -->
+
 <script>
 window.dataLayer = window.dataLayer || [];
 
@@ -22,271 +27,978 @@ gtag('consent', 'default', {
 gtag('js', new Date());
 gtag('config', 'AW-18296637019');
 </script>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>CompramosTuCocheConDeudas | Toda España</title>
 
+<style>
 
-  <style>
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+}
+
+html{
+  scroll-behavior:smooth;
+}
 
 body{
   font-family:Arial,Helvetica,sans-serif;
   background:#f7faf9;
   color:#10233f;
-  line-height:1.6;
+  line-height:1.5;
 }
+
+a{
+  text-decoration:none;
+}
+
+.container{
+  width:92%;
+  max-width:1180px;
+  margin:auto;
+}
+
+/* =========================
+   CABECERA
+   ========================= */
 
 header{
   background:#ffffff;
-  color:#10233f;
-  padding:16px 6%;
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  gap:25px;
-  border-bottom:1px solid #e7efeb;
+  border-bottom:1px solid #e6eceb;
   position:sticky;
   top:0;
   z-index:1000;
 }
 
-.logo{
-  font-size:22px;
-  font-weight:800;
+.navbar{
+  min-height:72px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:25px;
+}
+
+.logo-area{
+  display:flex;
+  align-items:center;
+  gap:10px;
+}
+
+.logo-car{
+  width:42px;
+  height:42px;
+  border:3px solid #159447;
+  border-radius:10px 10px 7px 7px;
+  position:relative;
+}
+
+.logo-car:before{
+  content:"";
+  position:absolute;
+  width:22px;
+  height:12px;
+  border:3px solid #159447;
+  border-bottom:0;
+  border-radius:12px 12px 0 0;
+  left:7px;
+  top:-10px;
+  background:#fff;
+}
+
+.logo-car:after{
+  content:"••";
+  position:absolute;
+  color:#159447;
+  font-size:24px;
+  letter-spacing:10px;
+  left:6px;
+  bottom:-9px;
+}
+
+.logo-text strong{
+  display:block;
+  font-size:20px;
   color:#10233f;
 }
 
-header a{
-  color:#10233f;
-  text-decoration:none;
+.logo-text strong span{
+  color:#159447;
+}
+
+.logo-text small{
+  color:#64748b;
+  font-size:12px;
+}
+
+nav{
+  display:flex;
+  align-items:center;
+  gap:27px;
+}
+
+nav a{
+  color:#1e293b;
+  font-size:14px;
+  font-weight:500;
+}
+
+nav a:hover{
+  color:#159447;
+}
+
+.phone-top{
+  background:#129447;
+  color:white;
+  padding:13px 23px;
+  border-radius:10px;
+  font-weight:800;
+  display:flex;
+  align-items:center;
+  gap:9px;
+  white-space:nowrap;
+}
+
+.phone-icon{
+  font-size:21px;
+}
+
+/* =========================
+   HERO
+   ========================= */
+
+.hero{
+  position:relative;
+  overflow:hidden;
+  background:
+    linear-gradient(
+      90deg,
+      rgba(255,255,255,.98) 0%,
+      rgba(255,255,255,.93) 43%,
+      rgba(235,245,244,.72) 100%
+    );
+  min-height:495px;
+}
+
+.hero:after{
+  content:"";
+  position:absolute;
+  left:0;
+  right:0;
+  bottom:0;
+  height:180px;
+  background:
+    linear-gradient(
+      180deg,
+      transparent,
+      rgba(37,54,62,.10)
+    );
+  pointer-events:none;
+}
+
+.hero-bg{
+  position:absolute;
+  inset:0;
+  z-index:0;
+  background:
+    radial-gradient(circle at 82% 48%,rgba(38,100,85,.16),transparent 28%),
+    linear-gradient(135deg,#ffffff 0%,#edf7f5 55%,#dfeeea 100%);
+}
+
+.hero-bg:before{
+  content:"";
+  position:absolute;
+  width:100%;
+  height:220px;
+  bottom:0;
+  background:
+    linear-gradient(165deg,transparent 35%,rgba(85,119,105,.16) 36%,rgba(85,119,105,.08) 65%,transparent 66%);
+}
+
+.hero-inner{
+  position:relative;
+  z-index:2;
+  min-height:495px;
+  display:grid;
+  grid-template-columns:1.5fr .9fr;
+  align-items:center;
+  gap:35px;
+  padding:35px 0 20px;
+}
+
+.hero-copy{
+  padding:15px 0;
+}
+
+.hero-copy h1{
+  font-size:46px;
+  line-height:1.05;
+  margin-bottom:15px;
+  letter-spacing:-1.5px;
+  max-width:650px;
+}
+
+.hero-copy h1 span{
+  color:#119447;
+}
+
+.hero-copy p{
+  font-size:18px;
+  color:#26384d;
+  max-width:570px;
+  margin-bottom:20px;
+}
+
+.hero-sub{
+  font-size:16px !important;
+  margin-top:-12px;
+}
+
+.hero-benefits{
+  display:flex;
+  flex-wrap:wrap;
+  gap:25px;
+  margin-top:20px;
+}
+
+.hero-benefit{
+  display:flex;
+  align-items:center;
+  gap:9px;
+  font-size:13px;
   font-weight:700;
 }
 
-.hero{
-  background:
-    linear-gradient(rgba(247,250,249,.82),rgba(247,250,249,.88)),
-    url("https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=1800&q=85")
-    center/cover;
-  color:#10233f;
-  text-align:left;
-  padding:80px 6%;
-  min-height:520px;
-}
-
-.hero h1{
-  font-size:clamp(38px,5vw,64px);
-  line-height:1.05;
-  max-width:720px;
-  margin:0 0 25px;
-  font-weight:800;
-}
-
-.hero p{
-  font-size:20px;
-  max-width:650px;
-  margin:0 0 30px;
-}
-
-.boton{
-  display:inline-block;
-  background:#16a05a;
+.hero-benefit-icon{
+  width:31px;
+  height:31px;
+  border-radius:50%;
+  background:#119447;
   color:white;
-  padding:16px 30px;
-  border-radius:10px;
-  font-size:18px;
-  font-weight:800;
-  text-decoration:none;
-  box-shadow:0 8px 22px rgba(22,160,90,.25);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:16px;
 }
 
-.boton:hover{
-  background:#12894d;
+/* coches decorativos */
+
+.cars{
+  position:absolute;
+  left:35px;
+  bottom:-8px;
+  width:560px;
+  height:190px;
+  z-index:1;
+  pointer-events:none;
 }
 
-section{
-  max-width:1150px;
-  margin:auto;
-  padding:75px 25px;
+.car{
+  position:absolute;
+  bottom:0;
+  width:330px;
+  height:120px;
+  border-radius:90px 90px 30px 30px;
+  box-shadow:0 15px 25px rgba(0,0,0,.18);
 }
 
-.titulo{
+.car:before{
+  content:"";
+  position:absolute;
+  width:170px;
+  height:75px;
+  left:72px;
+  top:-47px;
+  border-radius:100px 100px 15px 15px;
+  transform:skewX(-7deg);
+  background:inherit;
+  box-shadow:inset 0 0 0 3px rgba(0,0,0,.10);
+}
+
+.car:after{
+  content:"";
+  position:absolute;
+  width:100%;
+  height:35px;
+  left:0;
+  bottom:34px;
+  background:
+    linear-gradient(90deg,
+      transparent 5%,
+      rgba(255,255,255,.75) 6%,
+      rgba(255,255,255,.75) 17%,
+      transparent 18%,
+      transparent 82%,
+      rgba(255,255,255,.75) 83%,
+      rgba(255,255,255,.75) 94%,
+      transparent 95%);
+}
+
+.car-wheel{
+  position:absolute;
+  width:50px;
+  height:50px;
+  background:#17212b;
+  border-radius:50%;
+  bottom:-15px;
+  border:9px solid #6b7280;
+}
+
+.car-wheel.left{
+  left:52px;
+}
+
+.car-wheel.right{
+  right:52px;
+}
+
+.car-dark{
+  left:0;
+  background:linear-gradient(150deg,#4d5c66,#18242e);
+}
+
+.car-white{
+  left:220px;
+  bottom:5px;
+  transform:scale(.91);
+  background:linear-gradient(150deg,#ffffff,#dce4e7);
+}
+
+/* =========================
+   FORMULARIO
+   ========================= */
+
+.form-card{
+  background:white;
+  border-radius:15px;
+  padding:22px;
+  box-shadow:0 15px 35px rgba(15,35,50,.16);
+  position:relative;
+  z-index:5;
+}
+
+.form-card h2{
   text-align:center;
-  font-size:38px;
-  margin-bottom:45px;
-  color:#10233f;
+  font-size:25px;
+  margin-bottom:3px;
 }
 
-.tarjetas,
-.pasos{
-  display:grid;
-  grid-template-columns:repeat(4,1fr);
-  gap:22px;
-}
-
-.tarjeta,
-.paso,
-.formulario{
-  background:#ffffff;
-  padding:28px;
-  border-radius:16px;
-  box-shadow:0 6px 25px rgba(16,35,63,.08);
-  border:1px solid #e6efea;
-}
-
-.tarjeta{
+.form-card .form-intro{
   text-align:center;
-}
-
-.icone,
-.icono{
-  font-size:42px;
+  color:#475569;
+  font-size:13px;
   margin-bottom:12px;
 }
 
-.paso{
-  text-align:center;
+.form-group{
+  margin-bottom:8px;
 }
 
-.numero{
-  width:48px;
-  height:48px;
-  margin:0 auto 15px;
-  border-radius:50%;
-  background:#16a05a;
-  color:white;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  font-size:22px;
-  font-weight:800;
-}
-
-.formulario{
-  max-width:700px;
-  margin:auto;
-}
-
-label{
-  display:block;
-  margin-top:15px;
-  margin-bottom:6px;
-  font-weight:700;
-}
-
-input,
-select,
-textarea{
+.form-group input,
+.form-group select,
+.form-group textarea{
   width:100%;
-  padding:14px;
-  border:1px solid #d5e1dc;
-  border-radius:9px;
-  font-size:16px;
-  background:#ffffff;
+  border:1px solid #dbe2e7;
+  border-radius:8px;
+  padding:11px 12px;
+  font-family:inherit;
+  font-size:13px;
+  outline:none;
+  background:#fff;
 }
 
-textarea{
-  min-height:110px;
+.form-group textarea{
+  resize:vertical;
+  min-height:58px;
 }
 
-button{
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus{
+  border-color:#159447;
+  box-shadow:0 0 0 2px rgba(21,148,71,.08);
+}
+
+.form-button{
   width:100%;
-  margin-top:25px;
-  padding:16px;
   border:0;
-  background:#16a05a;
+  background:#119447;
   color:white;
-  border-radius:9px;
-  font-size:18px;
+  padding:14px;
+  border-radius:8px;
+  font-size:14px;
   font-weight:800;
   cursor:pointer;
+  margin-top:3px;
 }
 
-button:hover{
-  background:#12894d;
+.form-button:hover{
+  background:#087d39;
 }
 
-.contacto{
-  background:#ecf8f1;
-  color:#10233f;
+.form-security{
   text-align:center;
-  max-width:none;
+  color:#64748b;
+  font-size:11px;
+  margin-top:9px;
 }
 
-.contacto a{
-  color:#16a05a;
-  font-size:22px;
-  font-weight:800;
-  text-decoration:none;
+/* =========================
+   FRANJA BENEFICIOS
+   ========================= */
+
+.benefits{
+  background:#eefaf7;
+  padding:19px 0;
 }
 
-footer{
-  background:#063b2b;
-  color:white;
+.benefits-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:25px;
+}
+
+.benefit{
   text-align:center;
-  padding:35px 20px;
+  font-weight:700;
   font-size:14px;
 }
 
-.whatsapp{
-  position:fixed;
-  right:20px;
-  bottom:20px;
-  width:60px;
-  height:60px;
-  background:#16a05a;
-  color:white;
+.benefit-icon{
+  color:#119447;
+  font-size:34px;
+  margin-bottom:4px;
+}
+
+/* =========================
+   COMO FUNCIONA
+   ========================= */
+
+.section{
+  padding:48px 0;
+}
+
+.section-title{
+  text-align:center;
+  font-size:30px;
+  margin-bottom:5px;
+}
+
+.section-subtitle{
+  text-align:center;
+  color:#526174;
+  margin-bottom:25px;
+}
+
+.steps{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:20px;
+}
+
+.step{
+  background:#fff;
+  border-radius:12px;
+  padding:24px 20px;
+  text-align:center;
+  box-shadow:0 4px 16px rgba(16,35,63,.06);
+  position:relative;
+}
+
+.step-number{
+  position:absolute;
+  top:12px;
+  left:13px;
+  width:36px;
+  height:36px;
   border-radius:50%;
+  background:#119447;
+  color:white;
   display:flex;
   align-items:center;
   justify-content:center;
-  font-size:28px;
-  text-decoration:none;
-  box-shadow:0 6px 18px rgba(0,0,0,.2);
-  z-index:999;
+  font-size:17px;
+  font-weight:800;
 }
 
-@media(max-width:800px){
+.step-icon{
+  font-size:40px;
+  margin-bottom:8px;
+}
 
-  header{
+.step h3{
+  font-size:17px;
+  margin-bottom:7px;
+}
+
+.step p{
+  color:#617083;
+  font-size:13px;
+}
+
+/* =========================
+   SITUACIONES
+   ========================= */
+
+.situations{
+  background:#fff;
+}
+
+.situation-layout{
+  display:grid;
+  grid-template-columns:1.2fr .8fr;
+  gap:30px;
+  align-items:center;
+}
+
+.situation-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:12px;
+}
+
+.situation{
+  background:#f5faf9;
+  border-radius:10px;
+  padding:17px;
+  display:flex;
+  gap:13px;
+}
+
+.situation-icon{
+  color:#119447;
+  font-size:28px;
+  min-width:32px;
+}
+
+.situation h3{
+  font-size:14px;
+  margin-bottom:3px;
+}
+
+.situation p{
+  color:#617083;
+  font-size:12px;
+}
+
+.situation-photo{
+  min-height:260px;
+  border-radius:13px;
+  overflow:hidden;
+  background:
+    linear-gradient(120deg,rgba(10,38,32,.88),rgba(10,38,32,.22)),
+    linear-gradient(145deg,#8a9a87,#d7c7a5 45%,#526c57);
+  position:relative;
+  display:flex;
+  align-items:flex-end;
+  padding:27px;
+  color:white;
+}
+
+.situation-photo:after{
+  content:"";
+  position:absolute;
+  right:-30px;
+  top:35px;
+  width:280px;
+  height:180px;
+  border-radius:50%;
+  border:2px solid rgba(255,255,255,.22);
+  transform:rotate(-20deg);
+}
+
+.situation-photo h3{
+  font-size:25px;
+  line-height:1.1;
+  position:relative;
+  z-index:2;
+}
+
+.situation-photo p{
+  margin-top:8px;
+  position:relative;
+  z-index:2;
+  font-size:13px;
+}
+
+/* =========================
+   OPINIONES
+   ========================= */
+
+.reviews{
+  background:#eefaf7;
+}
+
+.review-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:20px;
+}
+
+.review{
+  background:white;
+  border-radius:12px;
+  padding:22px;
+  box-shadow:0 3px 12px rgba(16,35,63,.05);
+}
+
+.stars{
+  color:#f5b700;
+  letter-spacing:2px;
+  font-size:17px;
+  margin-bottom:9px;
+}
+
+.review p{
+  color:#3c4b5d;
+  font-size:13px;
+  margin-bottom:18px;
+}
+
+.reviewer{
+  display:flex;
+  align-items:center;
+  gap:10px;
+}
+
+.avatar{
+  width:37px;
+  height:37px;
+  border-radius:50%;
+  background:#e8f1f5;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-weight:800;
+  font-size:12px;
+}
+
+.reviewer strong{
+  display:block;
+  font-size:13px;
+}
+
+.reviewer small{
+  color:#8290a0;
+}
+
+/* =========================
+   CTA FINAL
+   ========================= */
+
+.final-cta{
+  background:#103f35;
+  color:white;
+  text-align:center;
+  padding:45px 20px;
+}
+
+.final-cta h2{
+  font-size:30px;
+  margin-bottom:8px;
+}
+
+.final-cta p{
+  opacity:.9;
+  margin-bottom:20px;
+}
+
+.whatsapp-button{
+  display:inline-flex;
+  align-items:center;
+  gap:9px;
+  background:#18a957;
+  color:white;
+  padding:14px 26px;
+  border-radius:9px;
+  font-weight:800;
+}
+
+.whatsapp-button:hover{
+  background:#0e8b45;
+}
+
+/* =========================
+   FOOTER
+   ========================= */
+
+footer{
+  background:#073b33;
+  color:white;
+  padding:27px 0 15px;
+}
+
+.footer-top{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:25px;
+  padding-bottom:20px;
+  border-bottom:1px solid rgba(255,255,255,.18);
+}
+
+.footer-logo{
+  font-size:17px;
+  font-weight:800;
+}
+
+.footer-logo span{
+  color:#31c873;
+}
+
+.footer-nav{
+  display:flex;
+  gap:25px;
+}
+
+.footer-nav a{
+  color:white;
+  font-size:13px;
+}
+
+.footer-phone{
+  font-size:20px;
+  font-weight:800;
+}
+
+.footer-bottom{
+  padding-top:14px;
+  display:flex;
+  justify-content:space-between;
+  color:#b8cbc6;
+  font-size:11px;
+}
+
+/* =========================
+   COOKIE BANNER
+   ========================= */
+
+.cookie-banner{
+  position:fixed;
+  left:20px;
+  right:20px;
+  bottom:20px;
+  max-width:950px;
+  margin:auto;
+  background:#ffffff;
+  border:1px solid #dce5e2;
+  border-radius:12px;
+  box-shadow:0 10px 35px rgba(0,0,0,.18);
+  padding:18px;
+  z-index:9999;
+}
+
+.cookie-content{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:20px;
+}
+
+.cookie-text{
+  font-size:12px;
+  color:#445466;
+}
+
+.cookie-text strong{
+  display:block;
+  color:#10233f;
+  font-size:14px;
+  margin-bottom:3px;
+}
+
+.cookie-buttons{
+  display:flex;
+  gap:9px;
+  flex-shrink:0;
+}
+
+.cookie-buttons button{
+  border:0;
+  padding:10px 17px;
+  border-radius:7px;
+  cursor:pointer;
+  font-weight:700;
+}
+
+.accept{
+  background:#159447;
+  color:white;
+}
+
+.reject{
+  background:#e8edef;
+  color:#26384d;
+}
+
+/* =========================
+   RESPONSIVE
+   ========================= */
+
+@media(max-width:900px){
+
+  nav{
+    display:none;
+  }
+
+  .hero-inner{
+    grid-template-columns:1fr;
+  }
+
+  .hero-copy{
+    padding-top:10px;
+  }
+
+  .hero-copy h1{
+    font-size:38px;
+  }
+
+  .form-card{
+    max-width:520px;
+    width:100%;
+    margin:0 auto 25px;
+  }
+
+  .cars{
+    opacity:.25;
+    left:-50px;
+  }
+
+  .benefits-grid{
+    grid-template-columns:1fr 1fr;
+  }
+
+  .situation-layout{
+    grid-template-columns:1fr;
+  }
+
+  .review-grid{
+    grid-template-columns:1fr;
+  }
+
+  .footer-top{
     flex-direction:column;
     text-align:center;
   }
 
-  .hero{
-    padding:60px 22px;
+  .footer-bottom{
+    flex-direction:column;
     text-align:center;
-  }
-
-  .hero h1{
-    font-size:40px;
-  }
-
-  .hero p{
-    font-size:18px;
-  }
-
-  .tarjetas,
-  .pasos{
-    grid-template-columns:1fr 1fr;
+    gap:6px;
   }
 
 }
 
-@media(max-width:500px){
+@media(max-width:600px){
 
-  .tarjetas,
-  .pasos{
+  .container{
+    width:92%;
+  }
+
+  .navbar{
+    min-height:64px;
+  }
+
+  .logo-text strong{
+    font-size:16px;
+  }
+
+  .phone-top{
+    padding:10px 13px;
+    font-size:12px;
+  }
+
+  .hero{
+    min-height:auto;
+  }
+
+  .hero-inner{
+    min-height:auto;
+    padding:28px 0;
+  }
+
+  .hero-copy h1{
+    font-size:34px;
+  }
+
+  .hero-copy p{
+    font-size:16px;
+  }
+
+  .hero-benefits{
+    gap:12px;
+  }
+
+  .hero-benefit{
+    font-size:11px;
+  }
+
+  .cars{
+    display:none;
+  }
+
+  .benefits-grid{
+    grid-template-columns:1fr 1fr;
+    gap:18px 10px;
+  }
+
+  .benefit{
+    font-size:12px;
+  }
+
+  .section{
+    padding:38px 0;
+  }
+
+  .section-title{
+    font-size:27px;
+  }
+
+  .steps{
     grid-template-columns:1fr;
   }
 
-  section{
-    padding:55px 18px;
+  .situation-grid{
+    grid-template-columns:1fr;
   }
 
-  .titulo{
-    font-size:30px;
+  .cookie-content{
+    flex-direction:column;
+    align-items:stretch;
   }
 
+  .cookie-buttons{
+    width:100%;
+  }
+
+  .cookie-buttons button{
+    flex:1;
+  }
+
+}
+
+/* =========================
+   BOTON WHATSAPP FLOTANTE
+   ========================= */
+
+.whatsapp-float{
+  position:fixed;
+  right:18px;
+  bottom:18px;
+  width:58px;
+  height:58px;
+  border-radius:50%;
+  background:#19b45b;
+  color:white;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:28px;
+  box-shadow:0 5px 20px rgba(0,0,0,.22);
+  z-index:9000;
 }
 
 </style>
@@ -294,435 +1006,718 @@ footer{
 
 <body>
 
+<!-- =========================
+     CABECERA
+     ========================= -->
+
 <header>
-    <div class="logo">CompramosTuCocheConDeudas</div>
-    <a href="tel:+34678544644">📞 678 544 644</a>
+  <div class="container navbar">
+
+    <a href="#" class="logo-area">
+
+      <div class="logo-car"></div>
+
+      <div class="logo-text">
+        <strong>Compramos<span>conembargo.es</span></strong>
+        <small>Tu coche tiene solución</small>
+      </div>
+
+    </a>
+
+    <nav>
+      <a href="#inicio">Inicio</a>
+      <a href="#como-funciona">Cómo funciona</a>
+      <a href="#ventajas">Ventajas</a>
+      <a href="#opiniones">Opiniones</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+
+    <a class="phone-top" href="tel:+34678544644">
+      <span class="phone-icon">◉</span>
+      678 544 644
+    </a>
+
+  </div>
 </header>
 
-<section class="hero">
-    <h1>¿Tienes un coche con deudas?</h1>
+
+<!-- =========================
+     HERO
+     ========================= -->
+
+<section class="hero" id="inicio">
+
+  <div class="hero-bg"></div>
+
+  <div class="container hero-inner">
+
+    <div class="hero-copy">
+
+      <h1>
+        Compramos tu coche<br>
+        <span>con embargo, deudas<br>
+        o reserva de dominio</span>
+      </h1>
+
+      <p>
+        Te ofrecemos una solución rápida, segura y sin complicaciones.
+      </p>
+
+      <p class="hero-sub">
+        Estudiamos tu caso y te hacemos una oferta en el menor tiempo posible.
+      </p>
+
+      <div class="hero-benefits">
+
+        <div class="hero-benefit">
+          <div class="hero-benefit-icon">✓</div>
+          Sin compromiso
+        </div>
+
+        <div class="hero-benefit">
+          <div class="hero-benefit-icon">◷</div>
+          Respuesta en menos de 24h
+        </div>
+
+        <div class="hero-benefit">
+          <div class="hero-benefit-icon">●</div>
+          En toda España
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <!-- COCHES -->
+
+    <div class="cars">
+
+      <div class="car car-dark">
+        <div class="car-wheel left"></div>
+        <div class="car-wheel right"></div>
+      </div>
+
+      <div class="car car-white">
+        <div class="car-wheel left"></div>
+        <div class="car-wheel right"></div>
+      </div>
+
+    </div>
+
+
+    <!-- FORMULARIO -->
+
+    <div class="form-card">
+
+      <h2>Solicita tu valoración</h2>
+
+      <p class="form-intro">
+        Rellena el formulario y te contactamos en menos de 24h con una oferta.
+      </p>
+
+      <form id="valoracionForm">
+
+        <div class="form-group">
+          <input
+            type="text"
+            id="nombre"
+            placeholder="Nombre"
+            required>
+        </div>
+
+        <div class="form-group">
+          <input
+            type="tel"
+            id="telefono"
+            placeholder="Teléfono"
+            required>
+        </div>
+
+        <div class="form-group">
+          <input
+            type="text"
+            id="coche"
+            placeholder="Marca, modelo y año"
+            required>
+        </div>
+
+        <div class="form-group">
+          <input
+            type="text"
+            id="matricula"
+            placeholder="Matrícula"
+            required>
+        </div>
+
+        <div class="form-group">
+          <select id="situacion" required>
+            <option value="">Situación del vehículo</option>
+            <option value="Embargo">Embargo</option>
+            <option value="Deuda">Deuda</option>
+            <option value="Reserva de dominio">Reserva de dominio</option>
+            <option value="Financiado">Financiado</option>
+            <option value="Otra situación">Otra situación</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <textarea
+            id="mensaje"
+            placeholder="Mensaje (opcional)"></textarea>
+        </div>
+
+        <button type="submit" class="form-button">
+          WhatsApp &nbsp; Solicitar valoración por WhatsApp
+        </button>
+
+        <div class="form-security">
+          🔒 Tus datos están seguros y no serán compartidos.
+        </div>
+
+      </form>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================
+     BENEFICIOS
+     ========================= -->
+
+<section class="benefits" id="ventajas">
+
+  <div class="container benefits-grid">
+
+    <div class="benefit">
+      <div class="benefit-icon">🤝</div>
+      Trato cercano<br>y profesional
+    </div>
+
+    <div class="benefit">
+      <div class="benefit-icon">€</div>
+      Valoración justa
+    </div>
+
+    <div class="benefit">
+      <div class="benefit-icon">▣</div>
+      Gestión rápida<br>y sin complicaciones
+    </div>
+
+    <div class="benefit">
+      <div class="benefit-icon">♧</div>
+      Compramos en<br>toda España
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================
+     COMO FUNCIONA
+     ========================= -->
+
+<section class="section" id="como-funciona">
+
+  <div class="container">
+
+    <h2 class="section-title">¿Cómo funciona?</h2>
+
+    <p class="section-subtitle">
+      En solo 3 pasos puedes saber el valor de tu coche,
+      aunque tenga embargo, deudas o reserva de dominio.
+    </p>
+
+    <div class="steps">
+
+      <div class="step">
+
+        <div class="step-number">1</div>
+
+        <div class="step-icon">▤</div>
+
+        <h3>Cuéntanos tu caso</h3>
+
+        <p>
+          Rellena el formulario con los datos de tu vehículo.
+          Es rápido y sin compromiso.
+        </p>
+
+      </div>
+
+
+      <div class="step">
+
+        <div class="step-number">2</div>
+
+        <div class="step-icon">⌕</div>
+
+        <h3>Estudiamos la situación</h3>
+
+        <p>
+          Analizamos la documentación y te damos una propuesta
+          en el menor tiempo posible.
+        </p>
+
+      </div>
+
+
+      <div class="step">
+
+        <div class="step-number">3</div>
+
+        <div class="step-icon">🤝</div>
+
+        <h3>Recibe tu valoración</h3>
+
+        <p>
+          Te contactamos con una oferta adaptada a tu caso,
+          de forma clara y transparente.
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================
+     SITUACIONES
+     ========================= -->
+
+<section class="section situations">
+
+  <div class="container">
+
+    <h2 style="font-size:30px;margin-bottom:5px;">
+      Una solución para cada situación
+    </h2>
+
+    <p style="color:#617083;margin-bottom:25px;">
+      Compramos tu coche aunque se encuentre en alguna de estas situaciones:
+    </p>
+
+    <div class="situation-layout">
+
+      <div class="situation-grid">
+
+        <div class="situation">
+
+          <div class="situation-icon">⚖</div>
+
+          <div>
+            <h3>Con embargo</h3>
+            <p>
+              Estudiamos tu caso y te ofrecemos una solución real.
+            </p>
+          </div>
+
+        </div>
+
+
+        <div class="situation">
+
+          <div class="situation-icon">●</div>
+
+          <div>
+            <h3>Con deudas</h3>
+            <p>
+              Aunque tengas deudas pendientes, podemos ayudarte.
+            </p>
+          </div>
+
+        </div>
+
+
+        <div class="situation">
+
+          <div class="situation-icon">▤</div>
+
+          <div>
+            <h3>Con reserva de dominio</h3>
+            <p>
+              También compramos vehículos con financiación.
+            </p>
+          </div>
+
+        </div>
+
+
+        <div class="situation">
+
+          <div class="situation-icon">🚗</div>
+
+          <div>
+            <h3>Cualquier estado</h3>
+            <p>
+              Funcionando, averiado o sin ITV. Nos encargamos de todo.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <div class="situation-photo">
+
+        <div>
+          <h3>Tu tranquilidad<br>también vale</h3>
+
+          <p>
+            Deja tu coche en buenas manos
+            y olvídate de preocupaciones.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================
+     OPINIONES DE EJEMPLO
+     ========================= -->
+
+<section class="section reviews" id="opiniones">
+
+  <div class="container">
+
+    <h2 class="section-title">
+      Lo que dicen nuestros clientes
+    </h2>
+
+    <p class="section-subtitle">
+      Ejemplos de experiencias de clientes.
+    </p>
+
+    <div class="review-grid">
+
+      <div class="review">
+
+        <div class="stars">★★★★★</div>
+
+        <p>
+          “Tenía una reserva de dominio y no sabía cómo solucionarlo.
+          Me asesoraron en todo momento y fue muy fácil.”
+        </p>
+
+        <div class="reviewer">
+
+          <div class="avatar">CR</div>
+
+          <div>
+            <strong>Carlos R.</strong>
+            <small>Madrid · Ejemplo</small>
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <div class="review">
+
+        <div class="stars">★★★★★</div>
+
+        <p>
+          “Muy profesionales y rápidos. Me dieron una valoración justa
+          y se encargaron de toda la gestión.”
+        </p>
+
+        <div class="reviewer">
+
+          <div class="avatar">LM</div>
+
+          <div>
+            <strong>Laura M.</strong>
+            <small>Valencia · Ejemplo</small>
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <div class="review">
+
+        <div class="stars">★★★★★</div>
+
+        <p>
+          “Pensé que no podría vender mi coche por el embargo,
+          pero me ofrecieron una solución clara.”
+        </p>
+
+        <div class="reviewer">
+
+          <div class="avatar">JG</div>
+
+          <div>
+            <strong>Javier G.</strong>
+            <small>Barcelona · Ejemplo</small>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================
+     CTA FINAL
+     ========================= -->
+
+<section class="final-cta" id="contacto">
+
+  <div class="container">
+
+    <h2>¿Quieres saber cuánto podemos ofrecerte?</h2>
 
     <p>
-        Estudiamos la compra de vehículos con deudas,
-        embargos o reserva de dominio en toda España.
+      Cuéntanos tu caso y estudiaremos tu vehículo sin compromiso.
     </p>
 
-    <a class="boton"
-       href="https://wa.me/34678544644?text=Hola,%20quiero%20solicitar%20una%20valoraci%C3%B3n%20de%20mi%20coche.">
-        Solicita valoración
-    </a>
-</section>
-
-<section>
-    <h2 class="titulo">¿Qué tipo de casos estudiamos?</h2>
-
-    <div class="tarjetas">
-
-        <div class="tarjeta">
-            <div class="icono">💶</div>
-            <h3>Con deudas</h3>
-            <p>Estudiamos vehículos con deudas pendientes.</p>
-        </div>
-
-        <div class="tarjeta">
-            <div class="icono">⚖️</div>
-            <h3>Con embargo</h3>
-            <p>Analizamos la situación del vehículo antes de realizar una oferta.</p>
-        </div>
-
-        <div class="tarjeta">
-            <div class="icono">📄</div>
-            <h3>Reserva de dominio</h3>
-            <p>Estudiamos vehículos con reserva de dominio.</p>
-        </div>
-
-        <div class="tarjeta">
-            <div class="icono">🚗</div>
-            <h3>Otros casos</h3>
-            <p>Cuéntanos tu situación y estudiaremos tu caso.</p>
-        </div>
-
-    </div>
-</section>
-
-<section>
-    <h2 class="titulo">¿Cómo funciona?</h2>
-
-    <div class="pasos">
-
-        <div class="paso">
-            <div class="numero">1</div>
-            <h3>Cuéntanos tu caso</h3>
-            <p>Facilítanos los datos básicos del vehículo.</p>
-        </div>
-
-        <div class="paso">
-            <div class="numero">2</div>
-            <h3>Estudiamos</h3>
-            <p>Revisamos la situación del vehículo.</p>
-        </div>
-
-        <div class="paso">
-            <div class="numero">3</div>
-            <h3>Valoramos</h3>
-            <p>Si es viable, te presentamos nuestra propuesta.</p>
-        </div>
-
-        <div class="paso">
-            <div class="numero">4</div>
-            <h3>Gestionamos</h3>
-            <p>Revisamos la documentación y la operación.</p>
-        </div>
-
-    </div>
-</section>
-
-<section>
-    <h2 class="titulo">Solicita valoración</h2>
-
-    <div class="formulario">
-
-        <form onsubmit="enviarWhatsApp(event)">
-
-            <label>Nombre</label>
-            <input id="nombre" type="text" required>
-
-            <label>Marca y modelo</label>
-            <input id="coche" type="text" required>
-
-            <label>Año</label>
-            <input id="ano" type="number" required>
-
-            <label>Matrícula</label>
-            <input id="matricula" type="text" required>
-
-            <label>Situación del vehículo</label>
-
-            <select id="situacion" required>
-                <option value="">Selecciona una opción</option>
-                <option>Deuda</option>
-                <option>Embargo</option>
-                <option>Reserva de dominio</option>
-                <option>Otro</option>
-            </select>
-
-            <label>Teléfono</label>
-            <input id="telefono" type="tel" required>
-
-            <label>Información adicional</label>
-            <textarea id="mensaje"></textarea>
-
-           <button type="submit">
-  Solicitar valoración por WhatsApp
-</button>
-
-        </form>
-
-    </div>
-</section>
-
-<section class="contacto">
-
-    <h2>📞 Contacta con nosotros</h2>
-
-    <p style="margin:20px 0;">
-        Compramos vehículos en toda España.
-    </p>
-
-    <a href="https://wa.me/34678544644">
-        WhatsApp: 678 544 644
+    <a
+      class="whatsapp-button"
+      href="https://wa.me/34678544644?text=Hola,%20quiero%20solicitar%20una%20valoración%20de%20mi%20coche.">
+      WhatsApp &nbsp; Solicita tu valoración
     </a>
 
-    <br><br>
-
-    <a href="tel:+34678544644">
-        Llamar ahora
-    </a>
+  </div>
 
 </section>
+
+
+<!-- =========================
+     FOOTER
+     ========================= -->
 
 <footer>
-    <p>© 2026 CompramosTuCocheConDeudas</p>
 
-    <p style="margin-top:10px;">
-        Toda operación queda sujeta a la comprobación
-        de la situación jurídica y administrativa del
-        vehículo y de su documentación.
-    </p>
+  <div class="container">
+
+    <div class="footer-top">
+
+      <div class="footer-logo">
+        🚗 Compramos<span>conembargo.es</span><br>
+        <small>Tu coche tiene solución</small>
+      </div>
+
+      <div class="footer-nav">
+        <a href="#inicio">Inicio</a>
+        <a href="#como-funciona">Cómo funciona</a>
+        <a href="#ventajas">Ventajas</a>
+        <a href="#opiniones">Opiniones</a>
+        <a href="#contacto">Contacto</a>
+      </div>
+
+      <div class="footer-phone">
+        ☎ 678 544 644
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+
+      <div>
+        © 2026 Compramosconembargo.es. Todos los derechos reservados.
+      </div>
+
+      <div>
+        Tu coche, nuestra solución.
+      </div>
+
+    </div>
+
+  </div>
+
 </footer>
 
-<a class="whatsapp"
-   href="https://wa.me/34678544644"
-   aria-label="WhatsApp">
-    💬
+
+<!-- =========================
+     WHATSAPP FLOTANTE
+     ========================= -->
+
+<a
+  class="whatsapp-float"
+  href="https://wa.me/34678544644?text=Hola,%20quiero%20solicitar%20una%20valoración%20de%20mi%20coche."
+  aria-label="WhatsApp">
+  ☎
 </a>
+
+
+<!-- =========================
+     COOKIES
+     ========================= -->
+
+<div class="cookie-banner" id="cookieBanner">
+
+  <div class="cookie-content">
+
+    <div class="cookie-text">
+
+      <strong>🍪 Utilizamos cookies</strong>
+
+      Utilizamos cookies y tecnologías similares para mejorar
+      la experiencia y medir el funcionamiento de la web.
+      Puedes aceptar o rechazar su uso.
+
+    </div>
+
+    <div class="cookie-buttons">
+
+      <button class="accept" id="acceptCookies">
+        Aceptar todas
+      </button>
+
+      <button class="reject" id="rejectCookies">
+        Rechazar
+      </button>
+
+    </div>
+
+  </div>
+
+</div>
+
+
+<!-- =========================
+     JAVASCRIPT
+     ========================= -->
 
 <script>
 
-function enviarWhatsApp(event){
+document.addEventListener("DOMContentLoaded", function(){
+
+  /* =========================
+     COOKIES
+     ========================= */
+
+  const banner = document.getElementById("cookieBanner");
+  const accept = document.getElementById("acceptCookies");
+  const reject = document.getElementById("rejectCookies");
+
+  const savedConsent =
+    localStorage.getItem("cookie-consent");
+
+  if(savedConsent){
+    banner.style.display = "none";
+  }
+
+  accept.addEventListener("click", function(){
+
+    localStorage.setItem(
+      "cookie-consent",
+      "accepted"
+    );
+
+    gtag('consent', 'update', {
+      ad_storage: 'granted',
+      analytics_storage: 'granted',
+      ad_user_data: 'granted',
+      ad_personalization: 'granted'
+    });
+
+    banner.style.display = "none";
+
+  });
+
+
+  reject.addEventListener("click", function(){
+
+    localStorage.setItem(
+      "cookie-consent",
+      "rejected"
+    );
+
+    gtag('consent', 'update', {
+      ad_storage: 'denied',
+      analytics_storage: 'denied',
+      ad_user_data: 'denied',
+      ad_personalization: 'denied'
+    });
+
+    banner.style.display = "none";
+
+  });
+
+
+  /* =========================
+     FORMULARIO + CONVERSIÓN
+     ========================= */
+
+  const form =
+    document.getElementById("valoracionForm");
+
+  form.addEventListener("submit", function(event){
 
     event.preventDefault();
 
     const nombre =
-        document.getElementById("nombre").value;
-
-    const coche =
-        document.getElementById("coche").value;
-
-    const ano =
-        document.getElementById("ano").value;
-
-    const matricula =
-        document.getElementById("matricula").value;
-
-    const situacion =
-        document.getElementById("situacion").value;
+      document.getElementById("nombre").value;
 
     const telefono =
-        document.getElementById("telefono").value;
+      document.getElementById("telefono").value;
+
+    const coche =
+      document.getElementById("coche").value;
+
+    const matricula =
+      document.getElementById("matricula").value;
+
+    const situacion =
+      document.getElementById("situacion").value;
 
     const mensaje =
-        document.getElementById("mensaje").value;
+      document.getElementById("mensaje").value;
+
 
     const texto =
-        "Hola, quiero solicitar una valoración.%0A%0A" +
-        "Nombre: " + encodeURIComponent(nombre) + "%0A" +
-        "Coche: " + encodeURIComponent(coche) + "%0A" +
-        "Año: " + encodeURIComponent(ano) + "%0A" +
-        "Matrícula: " + encodeURIComponent(matricula) + "%0A" +
-        "Situación: " + encodeURIComponent(situacion) + "%0A" +
-        "Teléfono: " + encodeURIComponent(telefono) + "%0A" +
-        "Información: " + encodeURIComponent(mensaje);
+      "Hola, quiero solicitar una valoración.%0A%0A" +
+      "Nombre: " + encodeURIComponent(nombre) + "%0A" +
+      "Teléfono: " + encodeURIComponent(telefono) + "%0A" +
+      "Coche: " + encodeURIComponent(coche) + "%0A" +
+      "Matrícula: " + encodeURIComponent(matricula) + "%0A" +
+      "Situación: " + encodeURIComponent(situacion) + "%0A" +
+      "Información: " + encodeURIComponent(mensaje);
 
-  gtag('event', 'conversion', {
-  'send_to': 'AW-18296637019/2nmmCP2h1vZcENuMwpRE'
-});
+
+    /* CONVERSIÓN GOOGLE ADS */
+
+    gtag('event', 'conversion', {
+      'send_to': 'AW-18296637019/2nmmCP2h1vZcENuMwpRE'
+    });
+
+
+    /* WHATSAPP */
+
     window.open(
-        "https://wa.me/34678544644?text=" + texto,
-        "_blank"
+      "https://wa.me/34678544644?text=" + texto,
+      "_blank"
     );
-}
 
-</script>
-<!-- AVISO DE COOKIES -->
-<div id="cookie-banner" class="cookie-banner">
-  <div class="cookie-content">
-    <strong>🍪 Utilizamos cookies</strong>
-
-    <p>
-      Utilizamos cookies para mejorar tu experiencia de navegación.
-      Puedes aceptar o rechazar las cookies.
-    </p>
-<p style="margin-top:10px;">
-  <a href="politica-cookies.html"
-     style="color:#fff; text-decoration:underline;">
-    Política de cookies
-  </a>
-</p>
- </div>
-
-  <div class="cookie-buttons">
-    <button id="cookie-accept" type="button">
-      Aceptar todas
-    </button>
-
-    <button id="cookie-reject" type="button">
-      Rechazar
-    </button>
-  </div>
-</div>
-
-<style>
-.cookie-banner {
-  position: fixed;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 99999;
-
-  background: #111;
-  color: #fff;
-
-  padding: 18px 20px;
-
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 20px;
-
-  box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.3);
-
-  font-family: Arial, sans-serif;
-}
-
-.cookie-content {
-  max-width: 700px;
-}
-
-.cookie-content strong {
-  font-size: 18px;
-}
-
-.cookie-content p {
-  margin: 7px 0 0;
-  font-size: 14px;
-  line-height: 1.5;
-}
-
-.cookie-buttons {
-  display: flex;
-  gap: 10px;
-  flex-shrink: 0;
-}
-
-.cookie-buttons button {
-  padding: 11px 18px;
-
-  background: #fff;
-  color: #111;
-
-  border: 1px solid #fff;
-  border-radius: 6px;
-
-  cursor: pointer;
-
-  font-size: 14px;
-  font-weight: bold;
-}
-
-.cookie-buttons button:hover {
-  opacity: 0.85;
-}
-
-/* Móvil */
-@media (max-width: 700px) {
-
-  .cookie-banner {
-    flex-direction: column;
-    text-align: center;
-    padding: 18px 15px;
-  }
-
-  .cookie-content {
-    max-width: 100%;
-  }
-
-.cookie-buttons {
-  display: flex;
-  gap: 10px;
-  flex-shrink: 0;
-}
-
-.cookie-buttons button {
-  padding: 11px 18px;
-  background: #fff;
-  color: #111;
-  border: 1px solid #fff;
-  border-radius: 6px;
-  cursor: pointer;
-  font-size: 14px;
-  font-weight: bold;
-}
-
-.cookie-buttons button:hover {
-  opacity: 0.85;
-}
-
-/* Móvil */
-@media (max-width: 700px) {
-
-  .cookie-banner {
-    flex-direction: column;
-    text-align: center;
-    padding: 18px 15px;
-  }
-
-  .cookie-content {
-    max-width: 100%;
-  }
-
-  .cookie-buttons {
-    width: 100%;
-  }
-
-  .cookie-buttons button {
-    flex: 1;
-  }
-}
-</style>
-  <script>
-
-
-
-/* AVISO DE COOKIES */
-document.addEventListener("DOMContentLoaded", function () {
-
-  const banner = document.getElementById("cookie-banner");
-  const accept = document.getElementById("cookie-accept");
-  const reject = document.getElementById("cookie-reject");
-
-  const consent = localStorage.getItem("cookie-consent");
-
-  /* Si ya había aceptado */
-  if (consent === "accepted") {
-
-    gtag('consent', 'update', {
-      ad_storage: 'granted',
-      analytics_storage: 'granted',
-      ad_user_data: 'granted',
-      ad_personalization: 'granted'
-    });
-
-    banner.style.display = "none";
-  }
-
-  /* Si ya había rechazado */
-  if (consent === "rejected") {
-
-    gtag('consent', 'update', {
-      ad_storage: 'denied',
-      analytics_storage: 'denied',
-      ad_user_data: 'denied',
-      ad_personalization: 'denied'
-    });
-
-    banner.style.display = "none";
-  }
-
-
-  /* ACEPTAR */
-  accept.addEventListener("click", function () {
-
-    localStorage.setItem("cookie-consent", "accepted");
-
-    gtag('consent', 'update', {
-      ad_storage: 'granted',
-      analytics_storage: 'granted',
-      ad_user_data: 'granted',
-      ad_personalization: 'granted'
-    });
-
-    banner.style.display = "none";
-  });
-
-
-  /* RECHAZAR */
-  reject.addEventListener("click", function () {
-
-    localStorage.setItem("cookie-consent", "rejected");
-
-    gtag('consent', 'update', {
-      ad_storage: 'denied',
-      analytics_storage: 'denied',
-      ad_user_data: 'denied',
-      ad_personalization: 'denied'
-    });
-
-    banner.style.display = "none";
   });
 
 });
+
 </script>
+
 
 </body>
 </html>
